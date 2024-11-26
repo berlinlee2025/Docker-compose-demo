@@ -10,7 +10,7 @@ docker-compose up --build;
     <li>1. Docker-compose</li>
     <img src="./assets/docker-compose.jpg" alt="docker-compose">
     <li>2. React Frontend</li>
-    <img src="./assets/react.jpg" alt="react" />
+    <img src="./assets/react.png" alt="react" />
     <li>3. Node.js</li>
     <img src="./assets/nodejs.jpg" alt="nodejs" />
     <li>4. Postgres</li>
@@ -49,16 +49,10 @@ docker-compose up --build;
 <h3>It leverages outerHTML to scrap data & images from any websites</h3>
 <img src="./assets/nodejs-puppeteer.jpg" alt="puppeteer" />
 
-<h3>This Node.js app also allows Users' Registration with Session Cookies</h3>
-<img alt="Register" src="./images/ai-fullstack-register.jpeg" style="aspect-ratio: 16/9; margin: 0 auto; max-width: 20vw;">
+<h3>This Node.js app secures controllers with JWT</h3>
+<img src="./assets/SPA-authen.png" alt="spa-authen" />
 <br/>
 
-<h3>Express REST API for Login Session Cookies</h3>
-<img src="./assets/Session-Cookie.png" alt="session-cookies" />
-<img src="./assets/Express-Session-Cookies.jpeg" alt="express-session-cookies" />
-
-<img alt="REST-API" src="./images/ai-fullstack-nodeapi.jpeg" style="aspect-ratio: 16/9; margin: 0 auto; max-width: 20vw;">
-<br>
 <h2>What if you want to explore this Node.js app more with hands-on?</h2>
 <h2>You may edit projectFolder/.env parameters</h2>
 <h2>You may also edit Postgres connection string using Knex.js inside</h2>
@@ -70,17 +64,16 @@ docker-compose up --build;
 <img src="./assets/Cloud-SaaS.jpeg" alt="clarifai" />
 
 <h2>Live React Server on Cloud:</h2>
-<h2>https://ai-recognition-frontend.onrender.com/</h2>
+<h2>https://www.ai-recognition-frontend.com</h2>
 
 <h2>Live Web Server on Cloud:</h2>
-<h2>https://ai-recognition-backend.onrender.com/</h2>
+<h2>https://www.ai-recognition-backend.com</h2>
 
 <h2>Feel free to test my Node.js app using rootDir/.env</h2>
 <h2>The API Key PAT is free of charge</h2>
 <h2>My Cloud SaaS Public IP rules are also set</h2>
 <h2>So please do not worry about my Cloud Web Service instance security</h2>
-
-<br>
+<br/>
 
 <h2>Postgre Database Administration</h2>
 <img src="./assets/postgresql.png" alt="postgres" />
@@ -94,8 +87,6 @@ psql -U postgres -d smart-brain -h 127.0.0.1 -p 5433
 <h2>To enter psql shell on Cloud SaaS Render.com</h2>
 
 <img src="./assets/Postgres-on-Render.jpeg" alt="postgres-on-render" />
-
-
 
 ##
 ##
