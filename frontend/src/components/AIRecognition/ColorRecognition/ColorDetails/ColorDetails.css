@@ -1,0 +1,89 @@
+.color-name {
+    margin-top: 1rem;
+}
+
+.error-msg {
+    margin-top: 1vh;
+}
+
+.color-page {
+    color: rgba(252, 252, 252, 0.8);
+    min-width: 48vw;
+    max-width: 60vw;
+    width: 100%;
+    font-size: 1rem;
+    margin-top: 2vh;
+    padding-inline: 2% 2%;
+}
+
+.color-table {
+    /* width: 48vw;
+    padding-right: 2vw; */
+    margin-top: 1.5rem;
+}
+
+.color {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .5s ease-out;
+}
+.color:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.raw-hex {
+    max-width: 3.5rem;
+    min-width: 3rem;
+    cursor: pointer;
+}
+.raw-hex:hover {
+    transform: translate(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.hex-val {
+    text-align: left;
+}
+
+.w3c-color {
+    border-radius: 5px;
+    cursor: pointer;
+}
+.w3c-color:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.w3c-name {
+    max-width: 3.5rem;
+    min-width: 3rem;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+}
+.w3c-name:hover {
+    transform: translate(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.w3c-hex {
+    min-width: 3rem;
+    max-width: 3.5rem;
+}
+
+.raw-hex, .w3c-color, .w3c-name, .w3c-hex {
+    transition: all .15s ease-in;
+    border-radius: 5px;
+}
+
+.raw-hex:hover, .w3c-name:hover, .w3c-hex:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.raw-hex:active, .w3c-name:active, .w3c-hex:active {
+    transform: translateY(-1px);
+}
+
+
+

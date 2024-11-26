@@ -1,0 +1,307 @@
+@import "../../../../sass/abstracts/variables";
+@import "../../../../sass/components/button";
+@import "../../../../sass/layout/grid/grid.scss";
+@import "../../../../sass/base/animations";
+// Cutom Google Font Family
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import "../../../../sass/components/frosted";
+
+.root {
+    //width: 90vw;
+    //width: 45vw;
+    display: flex;
+    justify-content: center;    
+    flex-direction: column;
+    align-items: center;
+    //height: 100vh;
+    margin: 0 auto;
+    //background-color: rgba($color-primary-light, 1);
+}   
+
+// 09:15
+.slideshow {
+    border-radius: 2.5rem;
+    // overflow: hidden;
+    //width: calc((100% - 10rem));
+    //width: 70rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // width: 85%;
+    transition: all 0.5s ease-in-out;
+
+    // Move-in from Right
+    animation-name: moveInRight;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out; 
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: 0 0 1rem 0.5rem rgba($font-light, 0.6);
+    }
+
+    &__inner {
+        border-radius: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        white-space: nowrap;
+        transition: transform 0.3s;
+        // box-shadow: 0 0.05rem 0.1rem 0.1rem rgba($font-light, 0.6);
+        
+    }
+    // .slideshow__btn
+    &__btn {
+        display: flex;
+        justify-content: space-evenly;
+
+        // .slideshow__btn--arrow
+        &--arrow {
+            background: none;
+            border: none;
+            cursor: pointer;
+            margin-top: 2rem;
+            transition: 0.1s;
+            color: rgba($font, 1);
+
+            &:hover {
+                color: rgba($color-secondary-dark2, 1);
+                //box-shadow: 0.2rem 0.2rem 0.2rem 0.2rem rgba($color-black, 0.6);
+                transform: translateY(-0.1rem);
+                // box-shadow: 0 0 3rem 1rem rgba($color-white, 0.7);
+
+                //Frosted effect
+                // Frosted when :hover
+                border-radius: 1.6rem;
+                background: linear-gradient(to bottom right, $font-light, $font, $font-dark, 0.8);
+                //box-shadow: 0 0 3rem 0 rgba(0, 0, 0, 0.3);
+                backdrop-filter: blur(1.5rem);
+                -webkit-backdrop-filter: blur(1.5rem);
+                border: 1px solid rgba($font-dark, 0.803);
+                position: relative;
+                background: inherit;
+                overflow: hidden;
+                // Allow contents to be seen & hovered above the glass
+                z-index: 1;
+        
+                &:before {
+                    background: inherit;
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    // box-shadow: inset 0 0 200rem rgba($font-light, 0.5);
+                    filter: blur(1.2rem);
+                    // Allow contents to be seen & hovered above the glass
+                    z-index: -1;
+                    }    
+            }
+
+            &:active {
+                //border: "";
+                box-shadow: 0 0 0 0;
+                transform: translateY(0);
+                color: rgba($color-black, 1);
+            }
+            &::after {
+
+            }
+        }
+    }
+}
+
+.indicators {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2rem;
+
+    // .indicators--btn
+    &--btn {
+        border: none;
+        cursor: pointer;
+    }
+}
+
+.indicators > button {
+    margin: 0.5rem;
+    background: none;
+}
+
+// For Slideshow.jsx Line 83 to 87
+.indicator-symbol {
+    //color: rgba($color-tertiary-dark, 1);
+    border-radius: 1rem;
+    color: rgba($font-light, 1);
+
+    &:hover {
+        color: rgba($color-white, 1);
+
+        // Frosted when :hover
+        border-radius: 1.6rem;
+        background: linear-gradient(to bottom right, $font-light, $font, $font-dark, 0.8);
+        box-shadow: 0 0 3rem 0 rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(1.5rem);
+        -webkit-backdrop-filter: blur(1.5rem);
+        border: 1px solid rgba($font-dark, 0.803);
+        position: relative;
+        background: inherit;
+        overflow: hidden;
+        // Allow contents to be seen & hovered above the glass
+        z-index: 1;
+
+        &:before {
+            background: inherit;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            box-shadow: inset 0 0 200rem rgba($font-light, 0.5);
+            filter: blur(1.2rem);
+            // Allow contents to be seen & hovered above the glass
+            z-index: -1;
+        }
+    }
+}
+.indicator-symbol-active {
+    border-radius: 1rem;
+    color: rgba($color-secondary-dark2, 1);
+
+    // Frosted
+    border-radius: 1.6rem;
+    background: linear-gradient(to bottom right, $font-light, $font, $font-dark, 0.8);
+    box-shadow: 0 0.25rem 1rem 0rem rgba($color-gold, 1);
+    backdrop-filter: blur(1.5rem);
+    -webkit-backdrop-filter: blur(1.5rem);
+    border: 1px solid rgba($font-dark, 0.803);
+    position: relative;
+    background: inherit;
+    overflow: hidden;
+    // Allow contents to be seen & hovered above the glass
+    z-index: 1;
+
+    &:before {
+        background: inherit;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        box-shadow: inset 0 0 200rem rgba($font-light, 0.5);
+        filter: blur(1.2rem);
+        // Allow contents to be seen & hovered above the glass
+        z-index: -1;
+    }
+
+    &:hover {
+        color: rgba($color-secondary-light, 1);
+    }
+}
+
+.slideshowItem {
+    border-radius: 2.5rem;
+    margin-top: 3rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 49rem;
+    //background-color: rgba($color-primary-light, 1);
+
+    // Frosted parent
+    // background: url();
+    background-size: cover;
+    background-attachment: fixed;
+
+    &--img {
+        //margin: 0 auto;
+        width: 450px;
+        // WORK ON AUTO SCALING!! 21 Nov 2023
+        height: 45rem;
+        transition: 0.5s ease-in-out;
+        //border: 1px solid transparent;
+        border-radius: 2.5rem;
+        cursor: pointer;
+
+        // Frosted children
+        background: linear-gradient(to bottom right, $font-light, $font, $font-dark, 0.8);
+        box-shadow: 0 0 3rem 0.5rem rgba($color-aqua, 0.6), 0 0 1rem 1rem rgba($font-light, 0.6);
+        //backdrop-filter: blur(1.5rem);
+        //-webkit-backdrop-filter: blur(1.5rem);
+        //border: 1px solid rgba($font-dark, 0.803);
+        position: relative;
+        background: inherit;
+        overflow: hidden;
+        // Allow contents to be seen & hovered above the glass
+        z-index: 1;
+
+        &:hover {
+            //transform: translateY(-0.25rem);
+            // Frosted children
+            // border-radius: 1.6rem;
+            // background: linear-gradient(to bottom right, $font-light, $font, $font-dark, 0.8);
+            // box-shadow: 0 0 0.5rem 0.5rem rgba($color-aqua, 0.6), 0 0 1rem 1rem rgba($font-light, 0.6);
+            // backdrop-filter: blur(1.5rem);
+            // -webkit-backdrop-filter: blur(1.5rem);
+            // border: 1px solid rgba($font-dark, 0.803);
+            // position: relative;
+            // background: inherit;
+            // overflow: hidden;
+            // z-index: 1;
+        }
+
+        &:before{
+            background: inherit;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            box-shadow: inset 0 0 2500rem rgba($font-dark, 0.8);
+            filter: blur(1.2rem);
+            // Allow contents to be seen & hovered above the glass
+            z-index: -1;
+        }
+
+        &:active {
+            transform: translateY(0);
+            box-shadow: 0 0 0 0;
+        }
+
+        
+    }
+
+    &--text {
+        font-size: 1.6rem;
+        font-weight: 600;
+        margin: 4rem 0 4rem 0;
+        padding: 0 2rem 0 rem;
+        white-space: normal;
+        color: rgba($footer, 1);
+    }
+}
+
+.slideshowText {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 20rem;
+
+    &--p {
+        //font-size: 1.6rem;
+        cursor: pointer;
+        font-weight: 600;
+        margin: 4rem 0 4rem 0;
+        padding: 0 2rem 0 rem;
+        white-space: normal;
+        color: rgba($font, 1);
+        transition: 0.5s;
+    }
+}

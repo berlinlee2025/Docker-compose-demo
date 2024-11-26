@@ -1,0 +1,120 @@
+import React, { Component } from "react";
+import "./App.css";
+import Clarifai from "clarifai";
+import Navigation from "./components/Navigation/Navigation";
+import Logo from "./components/Logo/Logo";
+import ImageLinkForm from "./components/ImageLinkForm/ImageLinkForm";
+
+const app = new Clarifai.App({
+  apiKey: '910f3adce45b4519a33c50ab13e1efcb'
+});
+
+// Most API requires an API Key
+// const returnClarifaiRequestOptions = (imageUrl) => {
+  
+//   const PAT = "b3e95c6890e443c29885edab45529224";
+
+//   const USER_ID = "phoenixyork166";
+//   const APP_ID = "my-app";
+  
+//   const MODEL_ID = "face-detection";
+//   const IMAGE_URL = imageUrl;
+
+//   const raw = JSON.stringify({
+//     user_app_id: {
+//       user_id: USER_ID,
+//       app_id: APP_ID,
+//     },
+//     inputs: [
+//       {
+//         data: {
+//           image: {
+//             url: IMAGE_URL,
+//           },
+//         },
+//       },
+//     ],
+//   });
+
+//   const requestOptions = {
+//     method: "POST",
+//     headers: {
+//       Accept: "application/json",
+//       Authorization: "Key " + PAT,
+//     },
+//     body: raw,
+//   };
+
+//   return requestOptions;
+// }
+
+// NOTE: MODEL_VERSION_ID is optional, you can also call prediction with the MODEL_ID only
+// https://api.clarifai.com/v2/models/{YOUR_MODEL_ID}/outputs
+// this will default to the latest version_id
+
+// fetch(
+//   "https://api.clarifai.com/v2/models/" +
+//   MODEL_ID +
+//   "/outputs",
+//   requestOptions
+// )
+//   .then((response) => response.json())
+//   .then((result) => console.log(result))
+//   .catch((error) => console.log("error", error));
+
+class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      input: '',
+      imageUrl: '',
+    }
+  }
+
+  onInputChange = (event) => {
+    console.log(event.target.value);
+    this.setState({input: event.target.value});
+  };
+
+  onButtonSubmit = () => {
+    console.log("click");
+    this.setState({imageUrl: this.state.input});
+
+    // On Button Click => run function(Face Detection)
+    // app.models.predict('Model ID', 'URL').then(...)
+    app.models.predict('face-detection', this.state.input)
+      .then(response => console.log(response))
+      .catch(err => console.log(err));
+  }
+  //   fetch(
+  //       "https://api.clarifai.com/v2/models/" +
+  //       "general-image-recognition" +
+  //       "/outputs",
+  //       returnClarifaiRequestOptions(this.state.input)
+  //     )
+  //       .then((response) => response.json())
+  //       .then((response) => {
+  //       console.log("hi ", response);
+  //       })
+  //       .catch((err) => console.log(err));
+  // };
+  
+
+  render() {
+    // const { imageUrl } = this.state;
+    {console.log(this.state.input)};
+    return (
+      <div className="App">
+        <Navigation />
+        <Logo />
+        <ImageLinkForm
+          onInputChange={this.onInputChange}
+          onButtonSubmit={this.onButtonSubmit}
+        />
+        {/* <FaceRecognition /> */}
+      </div>
+    );
+  }
+}
+
+export default App;

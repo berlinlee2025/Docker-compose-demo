@@ -1,0 +1,40 @@
+// Frosted Logo Effect
+
+.frosted-logo {
+    // body
+    background: url();
+    background-size: cover;
+    background-attachment: fixed;
+    //margin-bottom: 10rem;
+
+    &__children {
+        border-radius: 2rem;
+        background: linear-gradient(to bottom right, $font-light, $font, $font-dark, 0.8);
+        //box-shadow: 0 0 3rem 0 rgba(0, 0, 0, 0.2);
+        //box-shadow: 0rem 0rem 3rem 0 rgba($font-light, 0.8);
+        backdrop-filter: blur(1.5rem);
+        -webkit-backdrop-filter: blur(1.5rem);
+        border: 1px solid rgba($font-dark, 0.803);
+        position: relative;
+        background: inherit;
+        overflow: hidden;
+        // Allow contents to be seen & hovered above the glass
+        z-index: 1;
+
+        // Frosted Container:before
+        &:before {
+            background: inherit;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            //box-shadow: inset 0 0 2500rem rgba($font-light, 0.5);
+            filter: blur(1.2rem);
+            // Allow contents to be seen & hovered above the glass
+            z-index: -1;
+        }
+    }
+    
+}

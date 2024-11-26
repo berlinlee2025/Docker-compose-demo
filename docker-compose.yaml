@@ -1,0 +1,139 @@
+# version: "3.8"
+
+services: 
+  # service name 'postgresql' can be used in code for connections inside Docker Engine
+  ai-postgres:
+    container_name: ai-postgres
+
+    image: postgres
+    # Use either image: (pull image) OR build: (using Dockerfile)
+
+    # build:
+    #   context: ./postgresql
+    #   dockerfile: postgres.Dockerfile
+    #   args:
+    #     POSTGRES_PORT: 5433
+
+    command: -p 5433
+    ports:
+      - "5433:5433"
+    environment:
+      TZ: Asia/Hong_Kong
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: rootGor
+      POSTGRES_DB: smart-brain
+      POSTGRES_PORT: 5433 
+
+    # A microservice may have multiple volumes
+    # Named volume for MongoDB
+    volumes:  
+      #- ./data:/data/db
+      - ./postgresql/postgres-init/init.sql:/docker-entrypoint-initdb.d/init.sql
+      - ./custom_postgresql.conf:/etc/postgresql/postgresql.conf
+      - pgdata:/var/lib/postgresql/data # Default location for PostgreSQL data
+    
+    env_file: 
+      - ./env/postgres.env
+    privileged: true
+    # We may specify a docker network, yet it auto-creates for us like a bundle
+    # networks:
+    #   - ai-network
+    restart: unless-stopped
+    networks:
+      ai-network:
+        aliases:
+          - ai-postgres
+
+  # pgadmin:
+  #   container_name: pgadmin_container
+  #   image: dpage/pgadmin4
+  #   environment:
+  #     # PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL:-pgadmin4@pgadmin.org}
+  #     # PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD:-admin}
+  #     PGADMIN_CONFIG_SERVER_MODE: 'False'
+  #   volumes:
+  #      - pgadmin:/var/lib/pgadmin
+
+  #   ports:
+  #     #- "${PGADMIN_PORT:-5050}:80"
+  #     - "8080:8080"
+  #   networks:
+  #     ai-network:
+  #       aliases:
+  #         - ai-pgadmin
+  #   restart: unless-stopped
+
+
+  ai-backend:
+    #image: 'node'
+    container_name: ai-backend
+    build:
+      context: ./backend
+      dockerfile: nodejs.Dockerfile
+      args:
+        BACKEND_PORT: 3001
+    working_dir: /app
+    #command: npm start
+    command: npm run start:dev
+    ports:
+      - "3001:3001"
+    volumes: 
+      - logs:/app/logs # Named Volume
+      - ./backend:/app # Bind Mount - Sharing everything in 'backend' folder to docker backend container
+      - /app/node_modules # Anonymous Volumes
+    env_file:
+      - ./env/backend.env
+    # networks:
+    #   - ai-network
+    networks:
+      ai-network:
+        aliases:
+          - ai-backend
+    depends_on:
+      - ai-postgres
+
+  ai-frontend:
+    #image: 'node'
+    container_name: ai-frontend
+    image: 'ai-react:latest'
+    build:
+      context: ./frontend
+      dockerfile: react.Dockerfile
+    volumes:
+      # Bind Mount
+      - ./frontend/src:/app/src
+    command: npm start
+    ports:
+      - "3000:3000"
+
+    # networks:
+    #   - ai-network
+    
+    networks:
+      ai-network:
+        aliases:
+          - ai-frontend
+    # docker run -it interactive mode
+    stdin_open: true # frontend needs an open input connection
+    tty: true #
+    depends_on:
+      - ai-backend
+
+# networks:
+#   ai-network: {}
+
+# networks:
+#   ai-network:
+#     name: ai-network
+#     external: true
+
+networks:
+  ai-network:
+    driver: bridge
+
+# Named volumes parallel to services indentation level
+# Anonymous Volumes & Bind Mounts are NOT specified here
+volumes:
+  #data:
+  pgdata: 
+  logs:

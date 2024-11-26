@@ -1,0 +1,64 @@
+.celebrityName {
+    color: #1738f1;
+    margin-top: -10vh;
+    min-width: 16rem;
+    width: 100%;
+    min-height: 2.5rem;
+    height: 13%;
+    font-size: 2rem;
+    opacity: 1;
+}
+
+.faceContainer {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+}
+
+.faceImageBox {
+    transition: all .2s ease-out;
+}
+.faceImageBox:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.faceImage {
+    margin-top: 5vh;
+}
+
+.boundingBox {
+    position: absolute;
+    box-shadow: 0 0 0 3px #069cfa inset;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.invisible {
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+}
+
+.faceContainer {
+    margin-top: 10vh;
+}
+
+.celebrityNameOuter {
+    display: flex;
+}
+
+#faceImage {
+    margin-top: 5vh;
+    /* min-width: 30vw;
+    max-width: 50vw;
+    width: 50%;
+    min-height: 30vw;
+    max-height: 50vw;
+    height: 50%; */
+}
+

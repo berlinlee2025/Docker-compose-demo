@@ -1,0 +1,45 @@
+.navContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.navSignedIn {
+    display: flex;
+    justify-content: flex-end;
+    width: 95%;
+    /* position: absolute; */
+}
+
+.navBoxSignedOut {
+    display: block;
+    max-width: 60rem;
+    min-width: 33rem;
+}
+
+.navSignedOut {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.navPara {
+    opacity: 1;
+    font-size: 1.5rem;
+    padding: 1rem;
+    color: #fdc6fb;
+    text-decoration: none;
+    cursor: pointer;
+
+    transition: all .5s ease-in-out;
+}
+
+.navPara:hover {
+    color: rgba(216, 191, 216, 0.7);
+    scale: 1.05;
+}
+
+.navPara:active {
+    color: rgba(0, 0, 0, 0.5);
+    scale: 1.0;
+}

@@ -1,0 +1,112 @@
+@import '../../../sass/layout/register/form';
+
+.padding-right-middle {
+    padding-right: $padding-right-middle;
+}
+
+.padding-right-small {
+    padding-right: $padding-right-small;
+}
+
+.article {
+    border: 0.5px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 0.1rem 0.15rem 0rem rgba(0,0,0,0.1);
+    // overflow: hidden;
+    // max-width: 60rem;
+    // min-width: 33rem;
+    min-width: 350px;
+
+    &__main {
+        .measure {
+            padding: 1rem;
+            border-radius: 0.5rem;
+            box-shadow: 0.025rem 0.025rem 0.025rem 0.025rem #93e9fa,
+            0.025rem 0.025rem 0.025rem #ffffff;
+
+            .fieldset {
+                max-width: 100%;
+                border-radius: 0.2rem;
+
+                .register {
+                    box-sizing: border-box;
+                    color: rgba(255,255,255, 0.8);
+                    // color: rgba(0, 0, 0, 0.8);
+                    font-size: 3rem;
+                    font-weight: 600;
+                    margin: 0 auto;
+                    padding-left: 0;
+                    padding-right: 0;    
+                    max-width: 100%;
+                    white-space: normal;
+                  }
+                
+                .inputs {
+                    display: flex;
+                    flex-flow: column nowrap;
+                    position: relative;
+                    left: 5%;
+                    color: rgba(255,255,255, 0.8);
+
+                    .hint-box {
+                        .hint {
+                            display: inline-block;
+                          }
+                    }
+                }  
+            }
+          }
+    }
+  }
+
+  .registerBtnBox {
+    color: rgba(255,255,255, 0.8);
+    box-sizing: border-box;
+    // color: rgba(0, 0, 0, 0.8);
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;    
+    max-width: 100%;
+    white-space: normal;
+  }
+
+  .registerBtn {
+    left: 30%;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    transition: webkit-transform 0.25s ease-out;
+    font-size: 1.2rem;
+    font-family: inherit;
+    line-height: 1.15;
+    margin: 0 auto;
+    border-radius: 0.2rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    background-color: initial;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    font-weight: 700;
+    display: inline-block;
+    border: 1px solid #000;
+    -webkit-appearance: button;
+    cursor: pointer;
+  }
+
+  .registerBtnOK {
+    cursor: pointer;
+    color: rgba(255,255,255, 0.8);
+    transition: all .1s ease-in;
+    box-shadow: 0.3rem 0.3rem 1rem #f6f8f8, -2px -2px 1rem #eefa43;
+    // box-shadow: 0.025rem 0.025rem 0.025rem 0.025rem #93e9fa,
+    //         0.025rem 0.025rem 0.025rem #ffffff;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .registerBtnOK:hover {
+    transform: translateY(-2px);
+  }
+  .registerBtnOK:active {
+    transform: translateY(0px);
+    box-shadow: 0rem 0rem 0rem 0rem #93e9fa, 0rem 0rem 0rem #ffffff;
+  }

@@ -1,0 +1,16 @@
+@import '../../sass/layout/variables/variables';
+
+.loadingContainer {
+    &__p {
+        color: $text-color;
+        display: block;
+    }
+
+    &__img {
+        aspect-ratio: 16/9;
+        max-width: 400px;
+        max-height: 400px;
+        display: block;
+        max-width: 350px;
+    }
+}

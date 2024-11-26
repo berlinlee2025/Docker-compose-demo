@@ -1,0 +1,54 @@
+/* Animations */
+/* For Upper header */
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem); /* 100px */
+    }
+
+    30% {
+
+    }
+
+    80% {
+        transform: translateX(1rem); /* 10px */
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(10rem); /* 100px */
+    }
+
+    30% {
+
+    }
+
+    80% {
+        transform: translateX(-1rem); /* 10px */
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* for Discover our tour button */
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(3.2rem); /* 32px */
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

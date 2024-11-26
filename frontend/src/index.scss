@@ -1,0 +1,85 @@
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  overflow-y: scroll;
+  background: linear-gradient(180deg, #1a2f70 0%, #537cac 50%);
+  // background: linear-gradient(to right, #FF5EDF 0%, #04C8DE 100%);
+  /* -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
+  min-width: 350px;
+  display: flex;
+  justify-content: center;
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  user-select: none;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+button {
+  cursor: pointer;
+}
+
+
+$n: 15;
+$s: 300;
+
+$shadow: ();
+
+@for $i from 1 through $s {
+  $x: random(1920);
+  $y: random(1000);
+  $shadow: $shadow, ( $x+px $y+px #fff) !global;
+}
+
+@for $i from 1 through $n {
+  $v: random(90) + 9; // left
+  $h: random(250) + 50; // top
+  $d: random(70)/10 + 3; // 秒數
+  .meteor-#{$i} {
+    position: absolute;
+    top: $h + px;
+    left: $v*1%;
+    width: 300px;
+    height: 1px;
+    transform: rotate(-45deg);
+    background-image: linear-gradient(to right, #fff, rgba(255,255,255,0));
+    animation: meteor $d+s linear  infinite;
+    &:before {
+      content: "";
+      position: absolute;
+      width: 4px;
+      height: 5px;
+      border-radius: 50%;
+      margin-top: -2px;
+      background: rgba(#fff,.7);
+      box-shadow: 0 0 15px 3px #fff;
+    }
+    
+  }
+}
+
+@keyframes meteor {
+  0% {
+    opacity: 1;
+    margin-top: -300px;
+    margin-right: -300px;
+  }
+  12% {
+    opacity: 0;
+  }
+  15% {
+    margin-top: 300px;
+    margin-left: -600px;
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}

@@ -1,0 +1,82 @@
+.story {
+    width: 100%;
+    margin: 0 auto;
+    box-shadow: 0 3rem 6rem rgba($color-black, 0.2);
+    background-color: rgba($color-primary, 1);
+    border-radius: 3px;
+    //padding: 6rem;
+    padding-inline: 3rem;
+    font-size: $default-font-size;
+    // transform: skewX(-12deg);
+
+     
+    //& > * {transform: skewX(12deg); }
+    
+
+    &__shape {
+        // story__shape has position: absolute
+        position: relative;
+        width: 15rem;
+        height: 15rem;
+        // Float need explicit width & height
+        float: left;
+        // background-color: orangered;
+
+        // Making Text outside shape circling the shape
+        // circle(radius at x(%), y(%) );
+        -webkit-shape-outside: circle(50% at 50% 50%);
+        shape-outside: circle(50% at 50% 50%);
+
+        -webkit-clip-path: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
+
+        // Move shape to left
+        transform: translateX(-3rem) skewX(12deg);
+    }
+
+    &__img {
+        height: 100%;
+        // Move 4 rem to the left
+        transform: translateX(-4rem) scale(1.4);
+        backface-visibility: hidden;
+        transition: all .5s ease;
+    }
+
+    &__text {
+        // transform: translateX(-3rem) skewX(12deg)
+    }
+
+    &__caption {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, 15%);
+        font-size: $default-font-size;
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+        color: $color-white;
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+        opacity: 0;
+        transition: all .5s ease;
+        backface-visibility: hidden;
+        filter: contrast(1.05);
+    }
+
+    // story:hover story__caption
+    &:hover &__caption {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+
+    &:hover &__img {
+        // Zooms out when story:hover 
+        transform: translateX(-4rem) scale(1);
+        // filter: blur() 
+        // brightness(brighter > 100%)
+        // hue-rotate 60 deg more violet
+        // contrast
+        filter: blur(3px) hue-rotate(60deg) brightness(100%) contrast(1); 
+    }
+}

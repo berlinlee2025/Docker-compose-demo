@@ -1,0 +1,56 @@
+// mixin for clearfix
+@mixin clearfix {
+    // append a pseudo element to clear floats
+    &::after {
+        content: ""; // Clear content
+        display: table; 
+        clear: both; // Clear float: left && right
+    }
+}
+
+// Grid
+$grid-width: 71rem;
+// $gutter-vertical: 5rem;
+$gutter-vertical: 1rem;
+$gutter-horizontal: 3.75rem;
+
+.row {
+    max-width: $grid-width;
+    margin: 0 auto; // CSS auto-calc left & right margin
+    &:not(:last-child) {
+        margin-bottom: $gutter-vertical;
+    }
+
+    @include clearfix;
+
+    // Columns
+    .col-1-of-2 {
+        width: calc((100% - #{$gutter-horizontal}) /2);
+    }
+
+    .col-1-of-3 {
+        width: calc((100% - 2* #{$gutter-horizontal}) / 3);
+    }
+
+    .col-1-of-4 {
+        width: calc((100% - 3* #{$gutter-horizontal}) / 4);
+    }
+
+    .col-1-of-5 {
+        width: calc((100% - 4* #{$gutter-horizontal}) / 5);
+    }
+
+    .col-2-of-4 {
+        // 2 * .col-1-of-4 + #{$gutter-horizontal}
+        width: calc(2*((100% - 3* #{$gutter-horizontal})/4) + #{$gutter-horizontal});
+    }
+
+    .col-3-of-4 {
+        // 3 * .col-1-of-4 + 2*#{$gutter-horizontal}
+        width: calc(3*((100% - 3* #{$gutter-horizontal})/4) + 2*#{$gutter-horizontal});;
+    }
+
+    .col-4-of-5 {
+        width: calc(4*((100% - 4* #{$gutter-horizontal})/5) + 4*#{$gutter-horizontal});;
+    }
+}

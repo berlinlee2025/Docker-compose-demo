@@ -1,0 +1,32 @@
+.logo-container {
+    margin: 2rem;
+    margin-top: 1rem;
+    border-radius: 0.25rem;
+}
+
+.Tilt {
+    height: 14.3vh;
+    width: 14.3vh;
+    border-radius: 0.5rem;
+    background: rgba(216, 191, 216, 0.7);
+    // background: linear-gradient(to right, #FF5EDF 0%, #04C8DE 100%);
+    box-shadow: 0.4rem 0.4rem 0.8rem 0 rgba(0,0,0, 0.1);
+}
+
+.Tilt-inner {
+    border-radius: 0.5rem;
+    padding: 1rem;
+    transition: all 1s ease-in-out;
+
+    &:hover {
+        box-shadow: 0.3rem 0.3rem 1rem #f6f8f8, -2px -2px 1rem #eefa43;
+    }
+}
+
+.logo {
+    height: 7rem;
+    width: 7rem;
+    border-radius: 0.5rem;
+    box-shadow: 0.5rem 0.1rem 0.5rem #93e9fa,
+    -0.1rem -0.2rem 2rem #ffffff;
+}

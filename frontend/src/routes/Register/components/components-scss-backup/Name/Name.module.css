@@ -1,0 +1,171 @@
+@media only screen 
+and (min-width: 50px) {
+    .nameContainer {
+        margin-top: 1vh;
+        display: flex;
+        flex-direction: column;
+    }
+        
+    .nameLabel {
+        display: block;
+        font-weight: 600;
+        line-height: 1.5;
+        font-size: .875rem;
+    }
+    
+    .nameSubContainer {
+        display: flex;
+        flex-direction: row;
+        padding-left: 6em;
+    }
+    
+    .nameInput {
+        font-weight: bold;
+        padding: 0.5rem;
+        border-style: solid;
+        border-width: 1px;
+        background-color: var(--transparent);
+    }
+    
+    .nameInput:hover {
+        background-color: black;
+        color: white;
+    }
+    
+    .nameIconEmptyContainer {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+    }
+    
+    .nameIconEmptyContainer .nameIconBox {
+        display: flex;
+        height: 2.5vh;
+        width: 2.5vh;
+        align-self: center;
+    }
+    
+    .nameIconEmptyContainer .emptyBox {
+        display: flex;
+        width: 7.5vh;
+        height: 2.5vh;
+    }
+}
+
+@media only screen 
+and (min-device-width: 320px) {
+    .nameContainer {
+        margin-top: 1vh;
+        display: flex;
+        flex-direction: column;
+    }
+        
+    .nameLabel {
+        display: block;
+        font-weight: 600;
+        line-height: 1.5;
+        font-size: .875rem;
+    }
+    
+    .nameSubContainer {
+        display: flex;
+        flex-direction: row;
+        padding-left: 6em;
+    }
+    
+    .nameInput {
+        font-weight: bold;
+        padding: 0.5rem;
+        border-style: solid;
+        border-width: 1px;
+        background-color: var(--transparent);
+    }
+    
+    .nameInput:hover {
+        background-color: black;
+        color: white;
+    }
+    
+    .nameIconEmptyContainer {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+    }
+    
+    .nameIconEmptyContainer .nameIconBox {
+        display: flex;
+        height: 2.5vh;
+        width: 2.5vh;
+        align-self: center;
+    }
+    
+    .nameIconEmptyContainer .emptyBox {
+        display: flex;
+        width: 7.5vh;
+        height: 2.5vh;
+    }
+}
+
+@media only screen 
+    and (device-width: 1300px)
+    and (device-height: 1366px) {
+        .nameContainer {
+            margin-top: 1vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .nameLabel {
+            display: block;
+            font-weight: 600;
+            line-height: 1.5;
+            font-size: .875rem;
+            scale: 2.0;
+        }
+        
+        .nameSubContainer {
+            display: flex;
+            flex-direction: row;
+            padding-left: 6em;
+            position: relative;
+            left: -33%;
+            margin-top: 0.5vh;
+        }
+
+        .nameInput {
+            font-weight: 700;
+            padding: 0.5rem;
+            border-style: solid;
+            border-width: 1px;
+            background-color: var(--transparent);
+        }
+        
+        .nameInput:hover {
+            background-color: black;
+            color: white;
+        }
+        
+        .nameIconEmptyContainer {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            scale: 0.8;
+            position: absolute;
+            top: -40%;
+            left: 88%;
+        }
+        
+        .nameIconEmptyContainer > .nameIconBox {
+            height: 1.5vh;
+            width: 1.5vh;
+        }
+        
+        .nameIconEmptyContainer > .emptyBox {
+            width: 7.5vh;
+            height: 1.5vh;
+        }
+    }
+
+
+
+

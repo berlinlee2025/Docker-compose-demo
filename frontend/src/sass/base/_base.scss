@@ -1,0 +1,21 @@
+/* Normalize browsers - Basic Reset */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    /* font-size: 10px;
+    now 1rem = 10px
+    font-size: 100% => 16px
+
+    62.5% * 16px = 10px = 1rem
+    */
+    font-size: 62.5%; 
+}
+
+/* To be inherited by child elements */
+body {
+    box-sizing: border-box;
+}

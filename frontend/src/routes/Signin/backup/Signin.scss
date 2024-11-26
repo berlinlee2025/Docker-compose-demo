@@ -1,0 +1,156 @@
+.article {
+    max-width: 48rem;
+    width: 80%;
+    border-style: solid;
+    border-width: 0.1rem;
+    border-color: rgba(0, 0, 0, 0.1);
+    border-radius: 0.8rem;
+    box-shadow: 0.4rem 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2);
+    max-width: 51.2rem;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 3.2rem;
+    margin-bottom: 3.2rem;
+    display: flex;
+    justify-content: center;
+
+    main {
+        padding: 3.2rem;
+        color: rgba(0, 0, 0, 0.8);
+        display: block;
+
+        fieldset {
+            margin-left: 0;
+            margin-right: 0;
+            padding-left: 0;
+            padding-right: 0;
+            border-color: transparent;
+            border-style: solid;
+            border-width: 0.1rem;
+            box-sizing: border-box;
+            padding: 0.35em 0.75em 0.625em;
+
+            legend {
+                font-size: 4.8rem;
+                margin-left: 0;
+                margin-right: 0;
+                padding-left: 0;
+                padding-right: 0;
+                font-weight: 600;
+                color: inherit;
+                display: table;
+                max-width: 100%;
+                padding: 0;
+                white-space: normal;
+            }
+        }
+    }
+}
+
+// For containers (boxes)
+%box {
+    margin: 1.6rem 0;
+    box-sizing: border-box;
+}
+
+// For email && password labels
+%label {
+    font-size: 1.4rem;
+    line-height: 1.5;
+    font-weight: 600;
+    display: block;
+    cursor: default;
+}
+
+// For email && password inputs
+%input {
+    box-sizing: border-box;
+    padding: 0.8rem;
+    background-color: transparent;
+    width: 100%;
+    border-style: solid;
+    border-width: 1px;
+    overflow: visible;
+    font-family: inherit;
+    font-size: 1.6rem;
+    line-height: 1.15;
+    margin: 0;
+}
+// For <input>:hover
+%input-hover {
+    background-color: black;
+    color: white;
+}
+
+.emailBox, .passwordBox {
+    @extend %box;
+
+    &__label {
+        @extend %label;
+    }
+
+    &__input {
+        @extend %input;
+
+        &:hover {
+            @extend %input-hover;
+        }
+    }
+}
+
+// For signin && register containers (boxes)
+%btn-box {
+    line-height: 1.5;
+    margin-top: 1.6rem;
+}
+
+// For signin && register buttons
+%btn {
+    -moz-osx-font-smoothing: grayscale;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    transition: 0.15s ease-out;
+    font-size: 1.4rem;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    background-color: transparent;
+    font-weight: bold;
+    display: inline-block;
+    border-color: #000;
+    border-style: solid;
+    border-width: 0.1rem;
+    overflow: visible;
+    font-family: inherit;
+    line-height: 1.15;
+    margin: 0;
+    cursor: pointer;
+}
+// For buttons:hover
+%btn-hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+// For buttons:active
+%btn-active {
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.signinBox, .registerBox {
+    @extend %btn-box;
+
+    &__button {
+        @extend %btn;
+        
+        &:hover {
+            @extend %btn-hover;
+        }   
+        &:active {
+            @extend %btn-active;
+        }
+    }
+}

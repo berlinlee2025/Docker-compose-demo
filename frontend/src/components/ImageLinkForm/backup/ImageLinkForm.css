@@ -1,0 +1,108 @@
+.link-container {
+    font-size: 1.25rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 2rem;
+    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+    background-image: radial-gradient(closest-side, transparent 98%, rgba(0, 0, 0, .3) 99%),
+        radial-gradient(closest-side, transparent 98%, rgba(0, 0, 0, .3) 99%);
+    background-size: 80px 80px;
+    background-position: 0 0, 40px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 45vw;
+    width: 88%;
+    min-height: 10rem;
+    max-height: 12rem;
+    height: 100%;
+    position:relative;
+}
+
+.link-container #input-inner {
+    min-width: 30vw;
+    width: 88%;
+    overflow-x: scroll;
+    display: inline-block;
+    box-sizing: border-box;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 1.25rem;
+    padding: 0.5rem;
+    justify-content: center;
+}
+
+#container {
+    margin: 0 auto;
+    padding: 0 0.5rem;
+}
+
+#container-inner {
+    min-width: 70vw;
+    min-height: 10vw;
+    height: 100%;
+    display: flex;
+    padding: 0 1rem;
+}
+
+#paragraph {
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.paragraph-inner {
+    font-size: 1.5rem;
+}
+
+.buttons {
+    margin-left: 1rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    cursor: pointer;
+    min-width: 3rem;
+    max-width: 4rem;
+    padding: 0 2rem;
+}
+
+.detect-celebrity, .detect-color, .detect-age {
+    -moz-osx-font-smoothing: grayscale;
+    backface-visibility: hidden;
+    font-size: calc(1rem);
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    background-color: #a463f2;
+    color: #fff;
+    min-width: 4.86625rem;
+    max-width: 20rem;
+    width: 120%;
+    min-height: 2.6rem;
+    max-height: 4rem;
+    height: 50%;
+    text-decoration: none;
+    display: inline-block;
+    text-transform: none;
+    overflow: visible;
+    font-family: inherit;
+    line-height: 1.15;
+    margin: 0;
+    cursor: pointer;
+}
+
+.detect-celebrity:hover, .detect-color:hover, .detect-age:hover {
+    box-shadow: 0.3rem 0.3rem 1rem #e9ec13,
+    -2px -2px 1rem #ffffff;
+    transform: translateY(-3px);
+}
+
+.detect-celebrity:active, .detect-color:active, .detect-age:active {
+    transform: translateY(-1px);
+    box-shadow: 0.3rem 0.3rem 1rem #e9ec13,
+    -2px -2px 1rem #ffffff;
+}

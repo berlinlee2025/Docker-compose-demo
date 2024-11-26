@@ -1,0 +1,2047 @@
+/* iPhone 3/4/4s */
+@media only screen 
+  and (device-width: 320px) 
+  and (device-height: 480px) {
+    .article {
+        display: flex;
+        justify-content: center;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 0.5rem;
+        box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
+        margin-right: auto;
+        margin-left: auto;
+        max-height: 44rem;
+        max-width: 30rem;
+        min-height: 44rem;
+        min-width: 30rem;
+        position: relative;
+        height: 100%;
+        width: 50%;
+        left: 12%;
+      }
+    
+      .formContainer {
+        padding: 0;
+        height: 0%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: rgba(0, 0, 0, 0.8);
+        position: absolute;
+        top: 50%;
+      }
+    
+      .measure {
+        scale: 1.2;
+      }
+    
+      .fieldset {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0.35em 0 0.625em 0;
+        border: 1px solid transparent;
+        color: rgba(0, 0, 0, 0.8);
+      }
+    
+      .inputs {
+        display: flex;
+        flex-flow: column nowrap;
+      }
+        
+      .nameNotice,
+      .emailNotice {
+        min-width: 5vh;
+        width: 96%;
+      }
+    
+      .passwordNotice {
+        min-width: 5vh;
+        width: 95%;
+      }
+      
+      .register {
+        font-size: 3rem;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+        font-weight: 600;
+        color: rgba(0, 0, 0, 0.8);
+        box-sizing: border-box;
+        max-width: 100%;
+        white-space: normal;
+      }
+
+      .registerBtn {
+        position: absolute;
+        left: 40%;
+        backface-visibility: hidden;
+        transform: translateZ(0);
+        transition: webkit-transform 0.25s ease-out;
+        font-size: 0.8rem;
+        font-family: inherit;
+        line-height: 1.15;
+        margin: 0;
+        padding: 0.5rem 1rem 0.5rem 1rem;
+        background-color: initial;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        font-weight: 700;
+        display: inline-block;
+        border: 1px solid #000;
+        -webkit-appearance: button;
+        cursor: pointer;
+      }
+    
+      .registerBtnOK {
+        cursor: pointer;
+        transition: all .1s ease-in;
+        box-shadow: 0.3rem 0.3rem 1rem #f6f8f8, -2px -2px 1rem #eefa43;
+      }
+  
+      .registerBtnOK:hover {
+        transform: translateY(-3px);
+      }
+      .registerBtnOK:active {
+        transform: translateY(-1px);
+      }
+    }
+  
+/* Samsung Galaxy S2 && S3 mini */
+@media only screen 
+  and (device-width: 320px) 
+  and (device-height: 533px) {
+    .article {
+        display: flex;
+        justify-content: center;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 0.5rem;
+        box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
+        margin-right: auto;
+        margin-left: auto;
+        max-height: 55rem;
+        max-width: 41rem;
+        min-height: 55rem;
+        min-width: 41rem;
+        height: 100%;
+        width: 50%;
+        position: relative;
+      }
+
+      .measure {
+        scale: 1.4;
+      }
+
+      .registerBtnOK {
+        cursor: pointer;
+        transition: all .1s ease-in;
+        box-shadow: 0.3rem 0.3rem 1rem #f6f8f8, -2px -2px 1rem #eefa43;
+      }
+  
+      .registerBtnOK:hover {
+        transform: translateY(-3px);
+      }
+      .registerBtnOK:active {
+        transform: translateY(-1px);
+      }
+  }
+  
+/* iPod Touch */
+@media only screen 
+  and (device-width: 320px) 
+  and (device-height: 568px) {
+    .article {
+        display: flex;
+        justify-content: center;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 0.5rem;
+        box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
+        margin-right: auto;
+        margin-left: auto;
+        max-height: 55rem;
+        max-width: 41rem;
+        min-height: 55rem;
+        min-width: 41rem;
+        height: 100%;
+        width: 50%;
+        position: relative;
+      }
+
+      .measure {
+        scale: 1.4;
+      }
+
+      .registerBtnOK {
+        cursor: pointer;
+        transition: all .1s ease-in;
+        box-shadow: 0.3rem 0.3rem 1rem #f6f8f8, -2px -2px 1rem #eefa43;
+      }
+  
+      .registerBtnOK:hover {
+        transform: translateY(-3px);
+      }
+      .registerBtnOK:active {
+        transform: translateY(-1px);
+      }
+  }
+  
+/* Samsung Galaxy Nexus */
+@media only screen 
+  and (device-width: 360px) 
+  and (device-height: 600px) {
+    .article {
+        display: flex;
+        justify-content: center;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 0.5rem;
+        box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
+        margin-right: auto;
+        margin-left: auto;
+        max-height: 57rem;
+        max-width: 46rem;
+        min-height: 57rem;
+        min-width: 38rem;
+        position: relative;
+        height: 100%;
+        width: 50%;
+        left: 10%;
+      }
+
+      .measure {
+        scale: 1.4;
+      }
+
+      .registerBtnOK {
+        cursor: pointer;
+        transition: all .1s ease-in;
+        box-shadow: 0.3rem 0.3rem 1rem #f6f8f8, -2px -2px 1rem #eefa43;
+      }
+  
+      .registerBtnOK:hover {
+        transform: translateY(-3px);
+      }
+      .registerBtnOK:active {
+        transform: translateY(-1px);
+      }
+    }
+  
+/* Samsung Galaxy S5 && S6 && Note 4 && LG G4 */
+@media only screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) {
+    .article {
+        display: flex;
+        justify-content: center;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 0.5rem;
+        box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
+        margin-right: auto;
+        margin-left: auto;
+        max-height: 57rem;
+        max-width: 46rem;
+        min-height: 57rem;
+        min-width: 38rem;
+        position: relative;
+        height: 100%;
+        width: 50%;
+        left: 10%;
+      }
+
+      .measure {
+        scale: 1.4;
+      }
+
+      .registerBtnOK {
+        cursor: pointer;
+        transition: all .1s ease-in;
+        box-shadow: 0.3rem 0.3rem 1rem #f6f8f8, -2px -2px 1rem #eefa43;
+      }
+  
+      .registerBtnOK:hover {
+        transform: translateY(-3px);
+      }
+      .registerBtnOK:active {
+        transform: translateY(-1px);
+      }
+  }
+  
+/* Samsung Galaxy S8+ && S9 */
+@media only screen 
+  and (device-width: 360px) 
+  and (device-height: 740px) {
+    .article {
+        display: flex;
+        justify-content: center;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 0.5rem;
+        box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
+        margin-right: auto;
+        margin-left: auto;
+        max-height: 90rem;
+        max-width: 53rem;
+        min-height: 90rem;
+        min-width: 52rem;
+        height: 100%;
+        width: 50%;
+        position: relative;
+      }
+
+      .measure {
+        scale: 2.1;
+      }
+
+      .registerBtnOK {
+        cursor: pointer;
+        transition: all .1s ease-in;
+        box-shadow: 0.3rem 0.3rem 1rem #f6f8f8, -2px -2px 1rem #eefa43;
+      }
+  
+      .registerBtnOK:hover {
+        transform: translateY(-3px);
+      }
+      .registerBtnOK:active {
+        transform: translateY(-1px);
+      }
+  }
+  
+/* iPod Touch */
+@media only screen 
+  and (device-width: 375px) 
+  and (device-height: 568px) {
+    .article {
+        display: flex;
+        justify-content: center;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 0.5rem;
+        box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
+        margin-right: auto;
+        margin-left: auto;
+        max-height: 90rem;
+        max-width: 53rem;
+        min-height: 90rem;
+        min-width: 52rem;
+        height: 100%;
+        width: 50%;
+        position: relative;
+      }
+
+      .measure {
+        scale: 2.1;
+      }
+
+      .registerBtnOK {
+        cursor: pointer;
+        transition: all .1s ease-in;
+        box-shadow: 0.3rem 0.3rem 1rem #f6f8f8, -2px -2px 1rem #eefa43;
+      }
+  
+      .registerBtnOK:hover {
+        transform: translateY(-3px);
+      }
+      .registerBtnOK:active {
+        transform: translateY(-1px);
+      }
+    }
+  
+/* iphone XE && iPhone 8*/
+@media only screen 
+  and (device-width: 375px) 
+  and (device-height: 667px) {
+    .article {
+        display: flex;
+        justify-content: center;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 0.5rem;
+        box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
+        margin-right: auto;
+        margin-left: auto;
+        max-height: 90rem;
+        max-width: 53rem;
+        min-height: 90rem;
+        min-width: 52rem;
+        height: 100%;
+        width: 50%;
+        position: relative;
+      }
+
+      .measure {
+        scale: 2.1;
+      }
+
+      .registerBtnOK {
+        cursor: pointer;
+        transition: all .1s ease-in;
+        box-shadow: 0.3rem 0.3rem 1rem #f6f8f8, -2px -2px 1rem #eefa43;
+      }
+  
+      .registerBtnOK:hover {
+        transform: translateY(-3px);
+      }
+      .registerBtnOK:active {
+        transform: translateY(-1px);
+      }
+  }
+  
+/* iPhone 12 Pro */
+@media only screen 
+  and (device-width: 390px)
+  and (device-height: 844px) {
+    .article {
+        display: flex;
+        justify-content: center;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 0.5rem;
+        box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
+        margin-right: auto;
+        margin-left: auto;
+        max-height: 90rem;
+        max-width: 53rem;
+        min-height: 90rem;
+        min-width: 52rem;
+        height: 100%;
+        width: 50%;
+        position: relative;
+      }
+
+      .measure {
+        scale: 2.1;
+      }
+
+      .registerBtnOK {
+        cursor: pointer;
+        transition: all .1s ease-in;
+        box-shadow: 0.3rem 0.3rem 1rem #f6f8f8, -2px -2px 1rem #eefa43;
+      }
+  
+      .registerBtnOK:hover {
+        transform: translateY(-3px);
+      }
+      .registerBtnOK:active {
+        transform: translateY(-1px);
+      }
+    }
+
+/* Pixel 5 */
+@media only screen 
+  and (device-width: 393px)
+  and (device-height: 851px) {
+    .article {
+        display: flex;
+        justify-content: center;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 0.5rem;
+        box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
+        margin-right: auto;
+        margin-left: auto;
+        max-height: 90rem;
+        max-width: 53rem;
+        min-height: 90rem;
+        min-width: 52rem;
+        height: 100%;
+        width: 50%;
+        position: relative;
+      }
+
+      .measure {
+        scale: 2.1;
+      }
+
+      .registerBtnOK {
+        cursor: pointer;
+        transition: all .1s ease-in;
+        box-shadow: 0.3rem 0.3rem 1rem #f6f8f8, -2px -2px 1rem #eefa43;
+      }
+  
+      .registerBtnOK:hover {
+        transform: translateY(-3px);
+      }
+      .registerBtnOK:active {
+        transform: translateY(-1px);
+      }
+  }
+
+/* iPhone XS && Samsung Galaxy Note */
+@media only screen 
+  and (device-width: 400px) 
+  and (device-height: 640px) {
+    .article {
+        display: flex;
+        justify-content: center;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 0.5rem;
+        box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
+        margin-right: auto;
+        margin-left: auto;
+        max-height: 90rem;
+        max-width: 53rem;
+        min-height: 90rem;
+        min-width: 52rem;
+        height: 100%;
+        width: 50%;
+        position: relative;
+      }
+
+      .measure {
+        scale: 2.1;
+      }
+
+      .registerBtnOK {
+        cursor: pointer;
+        transition: all .1s ease-in;
+        box-shadow: 0.3rem 0.3rem 1rem #f6f8f8, -2px -2px 1rem #eefa43;
+      }
+  
+      .registerBtnOK:hover {
+        transform: translateY(-3px);
+      }
+      .registerBtnOK:active {
+        transform: translateY(-1px);
+      }
+    }
+    
+/* Google Pixel XL && Pixel 2 */
+@media only screen 
+  and (device-width: 411px) 
+  and (device-height: 731px) {
+    .article {
+        display: flex;
+        justify-content: center;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 0.5rem;
+        box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
+        margin-right: auto;
+        margin-left: auto;
+        max-height: 100rem;
+        max-width: 62rem;
+        min-height: 100rem;
+        min-width: 62rem;
+        height: 100%;
+        width: 50%;
+        position: relative;
+      }
+
+      .measure {
+        scale: 2.3;
+      }
+
+      .inputs {
+        display: flex;
+        flex-flow: column nowrap;
+        position: relative;
+        left: 4%;
+      }
+
+      .registerBtnOK {
+        cursor: pointer;
+        transition: all .1s ease-in;
+        box-shadow: 0.3rem 0.3rem 1rem #f6f8f8, -2px -2px 1rem #eefa43;
+      }
+  
+      .registerBtnOK:hover {
+        transform: translateY(-3px);
+      }
+      .registerBtnOK:active {
+        transform: translateY(-1px);
+      }
+  }
+  
+/* Samsung Galaxy S20 Ultra */
+@media only screen 
+  and (device-width: 411px) 
+  and (device-height: 731px) {
+    .article {
+        display: flex;
+        justify-content: center;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 0.5rem;
+        box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
+        margin-right: auto;
+        margin-left: auto;
+        max-height: 100rem;
+        max-width: 62rem;
+        min-height: 100rem;
+        min-width: 62rem;
+        height: 100%;
+        width: 50%;
+        position: relative;
+      }
+
+      .measure {
+        scale: 2.3;
+      }
+
+      .inputs {
+        display: flex;
+        flex-flow: column nowrap;
+        position: relative;
+        left: 4%;
+      }
+
+      .registerBtnOK {
+        cursor: pointer;
+        transition: all .1s ease-in;
+        box-shadow: 0.3rem 0.3rem 1rem #f6f8f8, -2px -2px 1rem #eefa43;
+      }
+  
+      .registerBtnOK:hover {
+        transform: translateY(-3px);
+      }
+      .registerBtnOK:active {
+        transform: translateY(-1px);
+      }
+  }
+
+/* Samsung Galaxy A51/71 */
+@media only screen 
+  and (device-width: 412px) 
+  and (device-height: 914px) {
+    .article {
+        display: flex;
+        justify-content: center;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 0.5rem;
+        box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
+        margin-right: auto;
+        margin-left: auto;
+        max-height: 100rem;
+        max-width: 62rem;
+        min-height: 100rem;
+        min-width: 62rem;
+        height: 100%;
+        width: 50%;
+        position: relative;
+      }
+
+      .measure {
+        scale: 2.3;
+      }
+
+      .inputs {
+        display: flex;
+        flex-flow: column nowrap;
+        position: relative;
+        left: 4%;
+      }
+
+      .registerBtnOK {
+        cursor: pointer;
+        transition: all .1s ease-in;
+        box-shadow: 0.3rem 0.3rem 1rem #f6f8f8, -2px -2px 1rem #eefa43;
+      }
+  
+      .registerBtnOK:hover {
+        transform: translateY(-3px);
+      }
+      .registerBtnOK:active {
+        transform: translateY(-1px);
+      }
+  }
+
+  /* Samsung Galaxy S20 Ultra */
+@media only screen 
+and (device-width: 412px) 
+and (device-height: 915px) {
+  .article {
+      display: flex;
+      justify-content: center;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 0.5rem;
+      box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
+      margin-right: auto;
+      margin-left: auto;
+      max-height: 100rem;
+      max-width: 62rem;
+      min-height: 100rem;
+      min-width: 62rem;
+      height: 100%;
+      width: 50%;
+      position: relative;
+    }
+
+    .measure {
+      scale: 2.3;
+    }
+
+    .inputs {
+      display: flex;
+      flex-flow: column nowrap;
+      position: relative;
+      left: 4%;
+    }
+
+    .registerBtnOK {
+      cursor: pointer;
+      transition: all .1s ease-in;
+      box-shadow: 0.3rem 0.3rem 1rem #f6f8f8, -2px -2px 1rem #eefa43;
+    }
+
+    .registerBtnOK:hover {
+      transform: translateY(-3px);
+    }
+    .registerBtnOK:active {
+      transform: translateY(-1px);
+    }
+}
+
+/* iPhone 6s Plus / 7 Plus */
+@media only screen 
+  and (device-width: 414px) 
+  and (device-height: 736px) {
+    .article {
+        display: flex;
+        justify-content: center;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 0.5rem;
+        box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
+        margin-right: auto;
+        margin-left: auto;
+        max-height: 125rem;
+        max-width: 65rem;
+        min-height: 125rem;
+        min-width: 65rem;
+        height: 100%;
+        width: 50%;
+        position: relative;
+      }
+
+      .measure {
+        scale: 2.6;
+      }
+
+      .inputs {
+        display: flex;
+        flex-flow: column nowrap;
+        position: relative;
+        left: 5%;
+      }
+
+      .registerBtnOK {
+        cursor: pointer;
+        transition: all .1s ease-in;
+        box-shadow: 0.3rem 0.3rem 1rem #f6f8f8, -2px -2px 1rem #eefa43;
+      }
+  
+      .registerBtnOK:hover {
+        transform: translateY(-3px);
+      }
+      .registerBtnOK:active {
+        transform: translateY(-1px);
+      }
+    }
+
+/* iPhone XR & iPhone XS Max*/
+@media only screen 
+  and (device-width: 414px) 
+  and (device-height: 896px) {
+    .article {
+        display: flex;
+        justify-content: center;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 0.5rem;
+        box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
+        margin-right: auto;
+        margin-left: auto;
+        max-height: 125rem;
+        max-width: 65rem;
+        min-height: 125rem;
+        min-width: 65rem;
+        height: 100%;
+        width: 50%;
+        position: relative;
+      }
+
+      .measure {
+        scale: 2.6;
+      }
+
+      .inputs {
+        display: flex;
+        flex-flow: column nowrap;
+        position: relative;
+        left: 5%;
+      }
+
+      .registerBtnOK {
+        cursor: pointer;
+        transition: all .1s ease-in;
+        box-shadow: 0.3rem 0.3rem 1rem #f6f8f8, -2px -2px 1rem #eefa43;
+      }
+  
+      .registerBtnOK:hover {
+        transform: translateY(-3px);
+      }
+      .registerBtnOK:active {
+        transform: translateY(-1px);
+      }
+}
+  
+/* iPhone 14 */
+@media only screen 
+  and (device-width: 428px) 
+  and (device-height: 926px) {
+    .article {
+        display: flex;
+        justify-content: center;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 0.5rem;
+        box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
+        margin-right: auto;
+        margin-left: auto;
+        max-height: 125rem;
+        max-width: 65rem;
+        min-height: 125rem;
+        min-width: 65rem;
+        height: 100%;
+        width: 50%;
+        position: relative;
+      }
+
+      .measure {
+        scale: 2.6;
+      }
+
+      .inputs {
+        position: relative;
+      }
+
+      .registerBtnOK {
+        cursor: pointer;
+        transition: all .1s ease-in;
+        box-shadow: 0.3rem 0.3rem 1rem #f6f8f8, -2px -2px 1rem #eefa43;
+      }
+  
+      .registerBtnOK:hover {
+        transform: translateY(-3px);
+      }
+      .registerBtnOK:active {
+        transform: translateY(-1px);
+      }
+}
+  
+/* Amazon Kindle Fire HD 7 */
+@media only screen 
+  and (device-width: 480px) 
+  and (device-height: 800px) {
+    .article {
+        display: flex;
+        justify-content: center;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 0.5rem;
+        box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
+        margin-right: auto;
+        margin-left: auto;
+        max-height: 100rem;
+        max-width: 55rem;
+        min-height: 100rem;
+        min-width: 55rem;
+        height: 100%;
+        width: 50%;
+        position: relative;
+      }
+
+      .measure {
+        scale: 2.2;
+      }
+
+      .registerBtnOK {
+        cursor: pointer;
+        transition: all .1s ease-in;
+        box-shadow: 0.3rem 0.3rem 1rem #f6f8f8, -2px -2px 1rem #eefa43;
+      }
+  
+      .registerBtnOK:hover {
+        transform: translateY(-3px);
+      }
+      .registerBtnOK:active {
+        transform: translateY(-1px);
+      }
+  }
+  
+  /* Samsung Galaxy Note 5 */
+  @media only screen and (device-width: 480px) and (device-height: 853px) {
+    .article {
+        display: flex;
+        justify-content: center;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 0.5rem;
+        box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
+        margin-right: auto;
+        margin-left: auto;
+        max-height: 100rem;
+        max-width: 55rem;
+        min-height: 100rem;
+        min-width: 55rem;
+        height: 100%;
+        width: 50%;
+        position: relative;
+      }
+
+      .measure {
+        scale: 2;
+      }
+
+      .inputs {
+        position: relative;
+        left: 4%;
+      }
+
+      .registerBtnOK {
+        cursor: pointer;
+        transition: all .1s ease-in;
+        box-shadow: 0.3rem 0.3rem 1rem #f6f8f8, -2px -2px 1rem #eefa43;
+      }
+  
+      .registerBtnOK:hover {
+        transform: translateY(-3px);
+      }
+      .registerBtnOK:active {
+        transform: translateY(-1px);
+      }
+    }
+  
+  /* Samsung Galaxy A51/71 && Surface Duo */
+  @media only screen and (device-width: 540px) and (device-height: 720px) {
+    .article {
+        display: flex;
+        justify-content: center;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 0.5rem;
+        box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
+        margin-right: auto;
+        margin-left: auto;
+        max-height: 90rem;
+        max-width: 75rem;
+        min-height: 90rem;
+        min-width: 75rem;
+        height: 100%;
+        width: 50%;
+        position: relative;
+      }
+
+      .measure {
+        scale: 2;
+      }
+
+      .inputs {
+        position: relative;
+      }
+
+      .registerBtnOK {
+        cursor: pointer;
+        transition: all .1s ease-in;
+        box-shadow: 0.3rem 0.3rem 1rem #f6f8f8, -2px -2px 1rem #eefa43;
+      }
+  
+      .registerBtnOK:hover {
+        transform: translateY(-3px);
+      }
+      .registerBtnOK:active {
+        transform: translateY(-1px);
+      }
+  }
+   
+  /* ///////// Tablets /////// */
+
+  /* Asus Nexus 7 (v2) && LG G Pad 8.3 */
+  @media only screen and (device-width: 600px) and (device-height: 960px) {
+    .article {
+        display: flex;
+        justify-content: center;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 0.5rem;
+        box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
+        margin-right: auto;
+        margin-left: auto;
+        max-height: 115rem;
+        max-width: 75rem;
+        min-height: 115rem;
+        min-width: 75rem;
+        height: 100%;
+        width: 50%;
+        position: relative;
+      }
+
+      .measure {
+        scale: 2.3;
+      }
+
+      .inputs {
+        position: relative;
+      }
+
+      .registerBtnOK {
+        cursor: pointer;
+        transition: all .1s ease-in;
+        box-shadow: 0.3rem 0.3rem 1rem #f6f8f8, -2px -2px 1rem #eefa43;
+      }
+  
+      .registerBtnOK:hover {
+        transform: translateY(-3px);
+      }
+      .registerBtnOK:active {
+        transform: translateY(-1px);
+      }
+    }
+  
+  /* Samsung Galaxy Tab 2 (7") */
+  @media only screen and (device-width: 600px) and (device-height: 1024px) {
+    .article {
+        display: flex;
+        justify-content: center;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 0.5rem;
+        box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
+        margin-right: auto;
+        margin-left: auto;
+        max-height: 115rem;
+        max-width: 75rem;
+        min-height: 115rem;
+        min-width: 75rem;
+        height: 100%;
+        width: 50%;
+        position: relative;
+      }
+
+      .measure {
+        scale: 2.3;
+      }
+
+      .inputs {
+        position: relative;
+      }
+
+      .registerBtnOK {
+        cursor: pointer;
+        transition: all .1s ease-in;
+        box-shadow: 0.3rem 0.3rem 1rem #f6f8f8, -2px -2px 1rem #eefa43;
+      }
+  
+      .registerBtnOK:hover {
+        transform: translateY(-3px);
+      }
+      .registerBtnOK:active {
+        transform: translateY(-1px);
+      }
+  }
+  
+  /* Asus Nexus 7 (v1) */
+  @media only screen and (device-width: 604px) and (device-height: 966px) {
+    .article {
+        display: flex;
+        justify-content: center;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 0.5rem;
+        box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
+        margin-right: auto;
+        margin-left: auto;
+        max-height: 115rem;
+        max-width: 75rem;
+        min-height: 115rem;
+        min-width: 75rem;
+        height: 100%;
+        width: 50%;
+        position: relative;
+      }
+
+      .measure {
+        scale: 2.3;
+      }
+
+      .inputs {
+        position: relative;
+      }
+
+      .registerBtnOK {
+        transition: all .1s ease-in;
+        box-shadow: 0.3rem 0.3rem 1rem #f6f8f8, -2px -2px 1rem #eefa43;
+        cursor: pointer;
+      }
+  
+      .registerBtnOK:hover {
+        transform: translateY(-3px);
+      }
+      .registerBtnOK:active {
+        transform: translateY(-1px);
+      }
+    }
+  
+  /* Microsoft Surface Pro && Pro 2 */
+  @media only screen and (device-width: 720px) and (device-height: 1280px) {
+    .article {
+        display: flex;
+        justify-content: center;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 0.5rem;
+        box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
+        margin-right: auto;
+        margin-left: auto;
+        max-height: 115rem;
+        max-width: 75rem;
+        min-height: 115rem;
+        min-width: 75rem;
+        height: 100%;
+        width: 50%;
+        position: relative;
+        left: 11%;
+      }
+
+      .measure {
+        scale: 2.1;
+      }
+
+      .inputs {
+        position: relative;
+        left: 5%;
+      }
+
+      .registerBtnOK {
+        transition: all .1s ease-in;
+        box-shadow: 0.3rem 0.3rem 1rem #f6f8f8, -2px -2px 1rem #eefa43;
+        cursor: pointer;
+      }
+  
+      .registerBtnOK:hover {
+        transform: translateY(-3px);
+      }
+      .registerBtnOK:active {
+        transform: translateY(-1px);
+      }
+    }
+  
+  /* Apple iPad Pro 9.7 && iPad mini && iPad 1, 2, 3, 4, Air, Air2 && HTC Nexus 9 && */
+  @media only screen and (device-width: 768px) and (device-height: 1024px) {
+    .article {
+        display: flex;
+        justify-content: center;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 0.5rem;
+        box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
+        margin-right: auto;
+        margin-left: auto;
+        max-height: 115rem;
+        max-width: 75rem;
+        min-height: 115rem;
+        min-width: 75rem;
+        height: 100%;
+        width: 50%;
+        position: relative;
+        left: 11%;
+      }
+
+      .measure {
+        scale: 2.1;
+      }
+
+      .inputs {
+        position: relative;
+        left: 5%;
+      }
+
+      .registerBtnOK {
+        transition: all .1s ease-in;
+        box-shadow: 0.3rem 0.3rem 1rem #f6f8f8, -2px -2px 1rem #eefa43;
+        cursor: pointer;
+      }
+  
+      .registerBtnOK:hover {
+        transform: translateY(-3px);
+      }
+      .registerBtnOK:active {
+        transform: translateY(-1px);
+      }
+    }  
+  
+  /* Microsoft Surface */
+  @media only screen and (device-width: 768px) and (device-height: 1366px) {
+    .article {
+        display: flex;
+        justify-content: center;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 0.5rem;
+        box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
+        margin-right: auto;
+        margin-left: auto;
+        max-height: 115rem;
+        max-width: 75rem;
+        min-height: 115rem;
+        min-width: 75rem;
+        height: 100%;
+        width: 50%;
+        position: relative;
+        left: 11%;
+      }
+
+      .measure {
+        scale: 2.1;
+      }
+
+      .inputs {
+        position: relative;
+        left: 5%;
+      }
+
+      .registerBtnOK {
+        transition: all .1s ease-in;
+        box-shadow: 0.3rem 0.3rem 1rem #f6f8f8, -2px -2px 1rem #eefa43;
+        cursor: pointer;
+      }
+  
+      .registerBtnOK:hover {
+        transform: translateY(-3px);
+      }
+      .registerBtnOK:active {
+        transform: translateY(-1px);
+      }
+    }
+  
+  /* Samsung Galaxy Tab 2 10" && Tab 3 10" && Galaxy Tab (8.9") && Nexus 10 && Amazon Kindle Fire HD 8.9 */
+  @media only screen and (device-width: 800px) and (device-height: 1280px) {
+      .article {
+        display: flex;
+        justify-content: center;
+        border-style: solid;
+        border-width: 1px;
+        border-color: rgba(0, 0, 0, 0.1);
+        border-radius: 0.5rem;
+        box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
+        max-width: 45rem;
+        min-width: 40rem;
+        max-height: 55rem;
+        min-height: 50rem;
+        margin-right: auto;
+        margin-left: auto;
+        height: 100%;
+        width: 50%;
+        position: relative;
+        /* "br3 ba b--black-10 mv4 w-100 w-50-m w-25-l mw6 shadow-5 center"*/
+      }
+        
+      .article > .formContainer {
+        padding: 0;
+        height: 0%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: rgba(0, 0, 0, 0.8);
+        position: absolute;
+        top: 50%;
+      }
+    
+      .measure {
+        scale: 0.6;
+      }
+    
+      .fieldset {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0.35em 0 0.625em 0;
+        border: 1px solid transparent;
+        color: rgba(0, 0, 0, 0.8);
+      }
+    
+      .inputs {
+        display: flex;
+        flex-flow: column nowrap;
+      }
+    
+      .nameNotice,
+      .emailNotice {
+        min-width: 5vh;
+        width: 96%;
+      }
+    
+      .passwordNotice {
+        min-width: 5vh;
+        width: 95%;
+      }
+    
+      .register {
+        font-size: 3rem;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+        font-weight: 600;
+        color: rgba(0, 0, 0, 0.8);
+        box-sizing: border-box;
+        max-width: 100%;
+        white-space: normal;
+      }
+
+      .registerBtn {
+        position: absolute;
+        left: 40%;
+        backface-visibility: hidden;
+        transform: translateZ(0);
+        transition: webkit-transform 0.25s ease-out;
+        font-size: 1.2rem;
+        font-family: inherit;
+        line-height: 1.15;
+        margin: 0;
+        padding: 0.5rem 1rem 0.5rem 1rem;
+        background-color: initial;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        font-weight: 700;
+        display: inline-block;
+        border: 1px solid #000;
+        -webkit-appearance: button;
+        cursor: pointer;
+      }
+    
+      .registerBtnOK {
+        transition: all .1s ease-in;
+        box-shadow: 0.3rem 0.3rem 1rem #f6f8f8, -2px -2px 1rem #eefa43;
+        cursor: pointer;
+      }
+  
+      .registerBtnOK:hover {
+        transform: translateY(-3px);
+      }
+      .registerBtnOK:active {
+        transform: translateY(-1px);
+      }
+    }
+  
+  /* iPad Air */
+  @media only screen and (device-width: 820px) and (device-height: 1180px) {
+    .article {
+      display: flex;
+      justify-content: center;
+      border-style: solid;
+      border-width: 1px;
+      border-color: rgba(0, 0, 0, 0.1);
+      border-radius: 0.5rem;
+      box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
+      max-width: 45rem;
+      min-width: 40rem;
+      max-height: 55rem;
+      min-height: 50rem;
+      margin-right: auto;
+      margin-left: auto;
+      height: 100%;
+      width: 50%;
+      position: relative;
+      /* "br3 ba b--black-10 mv4 w-100 w-50-m w-25-l mw6 shadow-5 center"*/
+    }
+  
+    .article > .formContainer {
+      padding: 0;
+      height: 0%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: rgba(0, 0, 0, 0.8);
+      position: absolute;
+      top: 50%;
+    }
+  
+    .measure {
+      scale: 0.65;
+    }
+  
+    .fieldset {
+      margin-left: 0;
+      margin-right: 0;
+      padding: 0.35em 0 0.625em 0;
+      border: 1px solid transparent;
+      color: rgba(0, 0, 0, 0.8);
+    }
+  
+    .article .formContainer .inputs {
+      display: flex;
+      flex-flow: column nowrap;
+    }
+  
+    .nameNotice,
+    .emailNotice {
+      min-width: 5vh;
+      width: 96%;
+    }
+  
+    .passwordNotice {
+      min-width: 5vh;
+      width: 95%;
+    }
+    
+    .register {
+      font-size: 3rem;
+      margin-left: 0;
+      margin-right: 0;
+      padding-left: 0;
+      padding-right: 0;
+      font-weight: 600;
+      color: rgba(0, 0, 0, 0.8);
+      box-sizing: border-box;
+      max-width: 100%;
+      white-space: normal;
+    }
+
+    .registerBtn {
+      position: absolute;
+      left: 40%;
+      backface-visibility: hidden;
+      transform: translateZ(0);
+      transition: webkit-transform 0.25s ease-out;
+      font-size: 1.2rem;
+      font-family: inherit;
+      line-height: 1.15;
+      margin: 0;
+      padding: 0.5rem 1rem 0.5rem 1rem;
+      background-color: initial;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      font-weight: 700;
+      display: inline-block;
+      border: 1px solid #000;
+      -webkit-appearance: button;
+      cursor: pointer;
+    }
+  
+    .registerBtnOK {
+      transition: all .1s ease-in;
+      box-shadow: 0.3rem 0.3rem 1rem #f6f8f8, -2px -2px 1rem #eefa43;
+      cursor: pointer;
+    }
+
+    .registerBtnOK:hover {
+      transform: translateY(-3px);
+    }
+    .registerBtnOK:active {
+      transform: translateY(-1px);
+    }
+  }
+  
+  /* Surface Pro 7 */
+  @media only screen and (device-width: 912px) and (device-height: 1368px) {
+    .article {
+      display: flex;
+      justify-content: center;
+      border-style: solid;
+      border-width: 1px;
+      border-color: rgba(0, 0, 0, 0.1);
+      border-radius: 0.5rem;
+      box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
+      max-width: 45rem;
+      min-width: 40rem;
+      max-height: 55rem;
+      min-height: 50rem;
+      margin-right: auto;
+      margin-left: auto;
+      height: 100%;
+      width: 50%;
+      position: relative;
+      /* "br3 ba b--black-10 mv4 w-100 w-50-m w-25-l mw6 shadow-5 center"*/
+    }
+  
+    .article > .formContainer {
+      padding: 0;
+      height: 0%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: rgba(0, 0, 0, 0.8);
+      position: absolute;
+      top: 50%;
+    }
+  
+    .measure {
+      scale: 0.75;
+    }
+  
+    .fieldset {
+      margin-left: 0;
+      margin-right: 0;
+      padding: 0.35em 0 0.625em 0;
+      border: 1px solid transparent;
+      color: rgba(0, 0, 0, 0.8);
+    }
+  
+    .inputs {
+      display: flex;
+      flex-flow: column nowrap;
+    }
+  
+    .register {
+      font-size: 3rem;
+      margin-left: 0;
+      margin-right: 0;
+      padding-left: 0;
+      padding-right: 0;
+      font-weight: 600;
+      color: rgba(0, 0, 0, 0.8);
+      box-sizing: border-box;
+      max-width: 100%;
+      white-space: normal;
+    }
+  
+    .nameNotice,
+    .emailNotice {
+      min-width: 5vh;
+      width: 96%;
+    }
+  
+    .passwordNotice {
+      min-width: 5vh;
+      width: 95%;
+    }
+  
+    .registerBtn {
+      position: absolute;
+      left: 40%;
+      backface-visibility: hidden;
+      transform: translateZ(0);
+      transition: webkit-transform 0.25s ease-out;
+      font-size: 1.2rem;
+      font-family: inherit;
+      line-height: 1.15;
+      margin: 0;
+      padding: 0.5rem 1rem 0.5rem 1rem;
+      background-color: initial;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      font-weight: 700;
+      display: inline-block;
+      border: 1px solid #000;
+      -webkit-appearance: button;
+      cursor: pointer;
+    }
+  
+    .registerBtnOK {
+      transition: all .1s ease-in;
+      box-shadow: 0.3rem 0.3rem 1rem #f6f8f8, -2px -2px 1rem #eefa43;
+      cursor: pointer;
+    }
+
+    .registerBtnOK:hover {
+      transform: translateY(-3px);
+    }
+    .registerBtnOK:active {
+      transform: translateY(-1px);
+    }
+  }
+  
+  /* Nest Hub */
+  @media only screen and (device-width: 1024px) and (device-height: 600px) {
+    .article {
+      display: flex;
+      justify-content: center;
+      border-style: solid;
+      border-width: 1px;
+      border-color: rgba(0, 0, 0, 0.1);
+      border-radius: 0.5rem;
+      box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
+      max-width: 45rem;
+      min-width: 40rem;
+      max-height: 55rem;
+      min-height: 50rem;
+      margin-right: auto;
+      margin-left: auto;
+      height: 100%;
+      width: 50%;
+      position: relative;
+      /* "br3 ba b--black-10 mv4 w-100 w-50-m w-25-l mw6 shadow-5 center"*/
+    }
+  
+    .article > .formContainer {
+      padding: 0;
+      height: 0%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: rgba(0, 0, 0, 0.8);
+      position: absolute;
+      top: 50%;
+    }
+  
+    .measure {
+      scale: 0.9;
+    }
+  
+    .fieldset {
+      margin-left: 0;
+      margin-right: 0;
+      padding: 0.35em 0 0.625em 0;
+      border: 1px solid transparent;
+      color: rgba(0, 0, 0, 0.8);
+    }
+  
+    .inputs {
+      display: flex;
+      flex-flow: column nowrap;
+    }
+  
+    .register {
+      font-size: 3rem;
+      margin-left: 0;
+      margin-right: 0;
+      padding-left: 0;
+      padding-right: 0;
+      font-weight: 600;
+      color: rgba(0, 0, 0, 0.8);
+      box-sizing: border-box;
+      max-width: 100%;
+      white-space: normal;
+    }
+  
+    .nameNotice,
+    .emailNotice {
+      min-width: 5vh;
+      width: 96%;
+    }
+  
+    .passwordNotice {
+      min-width: 5vh;
+      width: 95%;
+    }
+  
+    .registerBtn {
+      position: absolute;
+      left: 40%;
+      backface-visibility: hidden;
+      transform: translateZ(0);
+      transition: webkit-transform 0.25s ease-out;
+      font-size: 1.2rem;
+      font-family: inherit;
+      line-height: 1.15;
+      margin: 0;
+      padding: 0.5rem 1rem 0.5rem 1rem;
+      background-color: initial;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      font-weight: 700;
+      display: inline-block;
+      border: 1px solid #000;
+      -webkit-appearance: button;
+      cursor: pointer;
+    }
+  
+    .registerBtnOK {
+      transition: all .1s ease-in;
+      box-shadow: 0.3rem 0.3rem 1rem #f6f8f8, -2px -2px 1rem #eefa43;
+      cursor: pointer;
+    }
+
+    .registerBtnOK:hover {
+      transform: translateY(-3px);
+    }
+    .registerBtnOK:active {
+      transform: translateY(-1px);
+    }
+  }
+  
+  /* Apple iPad Pro */
+  @media only screen and (device-width: 1024px) and (device-height: 1366px) {
+      .article {
+        display: flex;
+        justify-content: center;
+        border-style: solid;
+        border-width: 1px;
+        border-color: rgba(0, 0, 0, 0.1);
+        border-radius: 0.5rem;
+        box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
+        max-width: 45rem;
+        min-width: 40rem;
+        max-height: 55rem;
+        min-height: 50rem;
+        margin-right: auto;
+        margin-left: auto;
+        height: 100%;
+        width: 50%;
+        position: relative;
+        /* "br3 ba b--black-10 mv4 w-100 w-50-m w-25-l mw6 shadow-5 center"*/
+      }
+    
+      .article > .formContainer {
+        padding: 0;
+        height: 0%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: rgba(0, 0, 0, 0.8);
+        position: absolute;
+        top: 50%;
+      }
+    
+      .measure {
+        scale: 0.6;
+      }
+    
+      .fieldset {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0.35em 0 0.625em 0;
+        border: 1px solid transparent;
+        color: rgba(0, 0, 0, 0.8);
+      }
+    
+      .inputs {
+        display: flex;
+        flex-flow: column nowrap;
+      }
+    
+      .register {
+        font-size: 3rem;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+        font-weight: 600;
+        color: rgba(0, 0, 0, 0.8);
+        box-sizing: border-box;
+        max-width: 100%;
+        white-space: normal;
+      }
+    
+      .nameNotice,
+      .emailNotice {
+        min-width: 5vh;
+        width: 96%;
+      }
+    
+      .passwordNotice {
+        min-width: 5vh;
+        width: 95%;
+      }
+    
+      .registerBtn {
+        position: absolute;
+        left: 40%;
+        backface-visibility: hidden;
+        transform: translateZ(0);
+        transition: webkit-transform 0.25s ease-out;
+        font-size: 1.2rem;
+        font-family: inherit;
+        line-height: 1.15;
+        margin: 0;
+        padding: 0.5rem 1rem 0.5rem 1rem;
+        background-color: initial;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        font-weight: 700;
+        display: inline-block;
+        border: 1px solid #000;
+        -webkit-appearance: button;
+        cursor: pointer;
+      }
+    
+      .registerBtnOK {
+        transition: all .1s ease-in;
+        box-shadow: 0.3rem 0.3rem 1rem #f6f8f8, -2px -2px 1rem #eefa43;
+        cursor: pointer;
+      }
+  
+      .registerBtnOK:hover {
+        transform: translateY(-3px);
+      }
+      .registerBtnOK:active {
+        transform: translateY(-1px);
+      }
+    }
+  
+  /* Microsoft Surface Pro 3 */
+  @media only screen and (device-width: 1024px) and (device-height: 1440px) {
+      .article {
+        display: flex;
+        justify-content: center;
+        border-style: solid;
+        border-width: 1px;
+        border-color: rgba(0, 0, 0, 0.1);
+        border-radius: 0.5rem;
+        box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
+        max-width: 45rem;
+        min-width: 40rem;
+        max-height: 55rem;
+        min-height: 50rem;
+        margin-right: auto;
+        margin-left: auto;
+        height: 100%;
+        width: 50%;
+        position: relative;
+        /* "br3 ba b--black-10 mv4 w-100 w-50-m w-25-l mw6 shadow-5 center"*/
+      }
+    
+      .article > .formContainer {
+        padding: 0;
+        height: 0%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: rgba(0, 0, 0, 0.8);
+        position: absolute;
+        top: 50%;
+      }
+    
+      .measure {
+        scale: 0.6;
+      }
+    
+      .fieldset {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0.35em 0 0.625em 0;
+        border: 1px solid transparent;
+        color: rgba(0, 0, 0, 0.8);
+      }
+    
+      .inputs {
+        display: flex;
+        flex-flow: column nowrap;
+      }
+    
+      .register {
+        font-size: 3rem;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+        font-weight: 600;
+        color: rgba(0, 0, 0, 0.8);
+        box-sizing: border-box;
+        max-width: 100%;
+        white-space: normal;
+      }
+    
+      .nameNotice,
+      .emailNotice {
+        min-width: 5vh;
+        width: 96%;
+      }
+    
+      .passwordNotice {
+        min-width: 5vh;
+        width: 95%;
+      }
+    
+      .registerBtn {
+        position: absolute;
+        left: 40%;
+        backface-visibility: hidden;
+        transform: translateZ(0);
+        transition: webkit-transform 0.25s ease-out;
+        font-size: 1.2rem;
+        font-family: inherit;
+        line-height: 1.15;
+        margin: 0;
+        padding: 0.5rem 1rem 0.5rem 1rem;
+        background-color: initial;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        font-weight: 700;
+        display: inline-block;
+        border: 1px solid #000;
+        -webkit-appearance: button;
+        cursor: pointer;
+      }
+    
+      .registerBtnOK {
+        transition: all .1s ease-in;
+        box-shadow: 0.3rem 0.3rem 1rem #f6f8f8, -2px -2px 1rem #eefa43;
+        cursor: pointer;
+      }
+  
+      .registerBtnOK:hover {
+        transform: translateY(-3px);
+      }
+      .registerBtnOK:active {
+        transform: translateY(-1px);
+      }
+    }
+  
+  /* Nest Hub Max */
+  @media only screen and (device-width: 1280px) and (device-height: 800px) {
+    .article {
+      display: flex;
+      justify-content: center;
+      border-style: solid;
+      border-width: 1px;
+      border-color: rgba(0, 0, 0, 0.1);
+      border-radius: 0.5rem;
+      box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
+      max-width: 45rem;
+      min-width: 40rem;
+      max-height: 55rem;
+      min-height: 50rem;
+      margin-right: auto;
+      margin-left: auto;
+      height: 100%;
+      width: 50%;
+      position: relative;
+      /* "br3 ba b--black-10 mv4 w-100 w-50-m w-25-l mw6 shadow-5 center"*/
+    }
+  
+    .article > .formContainer {
+      padding: 0;
+      height: 0%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: rgba(0, 0, 0, 0.8);
+      position: absolute;
+      top: 50%;
+    }
+  
+    .measure {
+      scale: 0.8;
+    }
+  
+    .fieldset {
+      margin-left: 0;
+      margin-right: 0;
+      padding: 0.35em 0 0.625em 0;
+      border: 1px solid transparent;
+      color: rgba(0, 0, 0, 0.8);
+    }
+  
+    .inputs {
+      display: flex;
+      flex-flow: column nowrap;
+    }
+  
+    .register {
+      font-size: 3rem;
+      margin-left: 0;
+      margin-right: 0;
+      padding-left: 0;
+      padding-right: 0;
+      font-weight: 600;
+      color: rgba(0, 0, 0, 0.8);
+      box-sizing: border-box;
+      max-width: 100%;
+      white-space: normal;
+    }
+  
+    .nameNotice,
+    .emailNotice {
+      min-width: 5vh;
+      width: 96%;
+    }
+  
+    .passwordNotice {
+      min-width: 5vh;
+      width: 95%;
+    }
+  
+    .registerBtnOK {
+      transition: all .1s ease-in;
+      box-shadow: 0.3rem 0.3rem 1rem #f6f8f8, -2px -2px 1rem #eefa43;
+      cursor: pointer;
+    }
+
+    .registerBtnOK:hover {
+      transform: translateY(-3px);
+    }
+    .registerBtnOK:active {
+      transform: translateY(-1px);
+    }
+  }
+  
+  @media only screen and (device-width: 1300px) and (device-height: 1366px) {
+    .article {
+        display: flex;
+        justify-content: center;
+        border-style: solid;
+        border-width: 1px;
+        border-color: rgba(0, 0, 0, 0.1);
+        border-radius: 0.5rem;
+        box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
+        max-width: 40rem;
+        min-width: 35rem;
+        max-height: 46rem;
+        min-height: 45rem;
+        margin-right: auto;
+        margin-left: auto;
+        height: 100%;
+        width: 50%;
+        position: relative;
+        /* "br3 ba b--black-10 mv4 w-100 w-50-m w-25-l mw6 shadow-5 center"*/
+      }
+    
+      .article > .formContainer {
+        padding: 0;
+        height: 0%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: rgba(0, 0, 0, 0.8);
+        position: absolute;
+        top: 50%;
+      }
+    
+      .measure {
+        scale: 0.8;
+      }
+    
+      .fieldset {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0.35em 0 0.625em 0;
+        border: 1px solid transparent;
+        color: rgba(0, 0, 0, 0.8);
+        width: 100%;
+      }
+    
+      .inputs {
+        display: flex;
+        flex-flow: column nowrap;
+      }
+    
+      .register {
+        font-size: 3rem;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+        font-weight: 600;
+        color: rgba(0, 0, 0, 0.8);
+        box-sizing: border-box;
+        max-width: 100%;
+        white-space: normal;
+      }
+    
+      .nameNotice,
+      .emailNotice {
+        min-width: 5vh;
+        width: 96%;
+        font-size: 1.1rem;
+      }
+    
+      .passwordNotice {
+        min-width: 5vh;
+        width: 95%;
+      }
+    
+      .registerBtn {
+        position: absolute;
+        left: 40%;
+        backface-visibility: hidden;
+        transform: translateZ(0);
+        transition: webkit-transform 0.25s ease-out;
+        font-size: 1.2rem;
+        font-family: inherit;
+        line-height: 1.15;
+        margin: 0;
+        padding: 0.5rem 1rem 0.5rem 1rem;
+        background-color: initial;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        font-weight: 700;
+        display: inline-block;
+        border: 1px solid #000;
+        -webkit-appearance: button;
+        cursor: pointer;
+      }
+    
+      .registerBtnOK {
+        transition: all .1s ease-in;
+        box-shadow: 0.3rem 0.3rem 1rem #f6f8f8, -2px -2px 1rem #eefa43;
+        cursor: pointer;
+      }
+  
+      .registerBtnOK:hover {
+        transform: translateY(-3px);
+      }
+      .registerBtnOK:active {
+        transform: translateY(-1px);
+      }
+}

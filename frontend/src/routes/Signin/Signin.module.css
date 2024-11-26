@@ -1,0 +1,171 @@
+.signin {
+    margin-bottom: 5rem;
+}
+
+.article {
+    border-radius: 0.2rem;
+    border: 1px solid rgba(0,0,0,0.1);
+    box-shadow: 0rem 0.15rem 0.1rem 0rem rgba(0, 0, 0, 0.1);
+    max-width: 25rem;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 1250px) {
+    .article {
+        box-shadow: 0.025rem 0.025rem 0.025rem 0.025rem #93e9fa,
+            0.025rem 0.025rem 0.025rem #ffffff;
+        transform: scale(1.25);
+    }
+}
+
+@media (max-width: 780px) {
+    .article {
+        transform: scale(1.2);
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .article {
+        transform: scale(1.4);
+        margin-top: 5rem;
+        max-width: 20rem;
+    }
+}
+
+@media (max-width: 200px) {
+    .article {
+        transform: scale(1.6);
+        margin-top: 5rem;
+        max-width: 20rem;
+    }
+}
+
+.article .main {
+    padding: 2rem;
+    /* color: rgba(0, 0, 0, 0.8); */
+    color: rgba(255,255,255, 0.8);
+    display: block;
+}
+
+.article .main .fieldset {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 1px;
+    box-sizing: border-box;
+    padding: 0.35em 0.75em 0.625em;
+}
+
+.article .main .fieldset .legend {
+    font-size: 3rem;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    font-weight: 600;
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0;
+    white-space: normal;
+}
+
+.article .main .fieldset .emailContainer {
+    margin-top: 1rem;
+}
+
+.article .main .fieldset .emailContainer .emailLabel, .passwordLabel{
+    font-size: 0.875rem;
+    line-height: 1.5;
+    font-weight: 600;
+    display: block;
+    cursor: default;
+}
+
+.article .main .fieldset .emailContainer .emailInput, .passwordInput {
+    border: 1px solid aqua;
+    box-sizing: border-box;
+    padding: 0.5rem;
+    /* background-color: transparent; */
+    width: 100%;
+    overflow: visible;
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+
+.article .main .fieldset .emailContainer .emailInput:hover, .passwordInput:hover {
+    background-color: black;
+    color: white;
+}
+
+.article .main .fieldset .passwordContainer {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+}
+
+.signinBtn {
+    box-shadow: 0.025rem 0.025rem 0.025rem 0.025rem #93e9fa,
+            0.025rem 0.025rem 0.025rem #ffffff;
+    color: rgba(255,255,255, 0.8);
+    -moz-osx-font-smoothing: grayscale;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    transition: 0.15s ease-out;
+    font-size: 0.875rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    background-color: transparent;
+    font-weight: bold;
+    display: inline-block;
+    border: 1px solid #000;
+    border-radius: 0.2rem;
+    overflow: visible;
+    font-family: inherit;
+    line-height: 1.15;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+#signinInput:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.registerBox {
+    line-height: 1.5;
+    margin-top: 1rem;
+}
+
+.registerBox > .registerInput {
+    opacity: 1;
+    font-size: 0.875rem;
+    color: #000;
+    display: inline-block;
+    text-decoration: none;
+    transition: 0.15s ease-in;
+    cursor: pointer;
+    display: inline-block;
+    border: 1px solid rgba(0,0,0,1);
+    padding: 0.5rem 1rem;
+}
+
+.registerInput:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.registerInput:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}

@@ -1,0 +1,69 @@
+@import "../../sass//abstracts/variables";
+@import "../../sass/components/button";
+@import "../../sass/layout/grid/grid.scss";
+@import "../../sass/base/animations";
+// Cutom Google Font Family
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import "../../sass/components/frosted";
+
+.container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+
+    .recordsHeading {
+        margin: 0;
+        padding: 0rem 1rem;
+        color: rgba($font, 1);
+        cursor: pointer;
+        transition: 0.5s ease-in-out;
+    
+        // &:hover {
+        //     color: rgba($color-secondary-dark2, 1);
+        // }
+
+        &:hover {
+            //color: rgba($font-light, 1);
+            // color: linear-gradient(to bottom right, $font-light, $font, $font-dark);
+            // box-shadow: 0 0 3rem 1rem rgba($font-light, 0.6);
+
+            // Frosted when :hover
+            border-radius: 1.6rem;
+            background: linear-gradient(to bottom right, $font-light, $font, $font-dark, 0.8);
+            //box-shadow: 0 0 3rem 0 rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(1.5rem);
+            -webkit-backdrop-filter: blur(1.5rem);
+            // border: 1px solid rgba($font-dark, 0.803);
+            position: relative;
+            background: inherit;
+            overflow: hidden;
+            // Allow contents to be seen & hovered above the glass
+            z-index: 1;
+
+            &:before {
+                background: inherit;
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                box-shadow: inset 0 0 200rem rgba($font-light, 0.5);
+                filter: blur(1.2rem);
+                // Allow contents to be seen & hovered above the glass
+                z-index: -1;
+            }
+        }
+    
+        &:active {
+            color: rgba($font, 1); 
+        }
+    }
+
+    @media (min-width: 860px) {
+        .recordsHeading {
+            width: 100%;
+        }
+    }
+}

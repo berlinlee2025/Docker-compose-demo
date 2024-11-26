@@ -1,0 +1,73 @@
+// Variables
+$padding-right-middle: 6rem;
+$padding-right-small: 4rem;
+
+
+@mixin box {
+    margin-top: 0.5vh;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.2rem;
+}
+
+@mixin label($font-size) {
+    font-weight: 600;
+    line-height: 1.5;
+    font-size: $font-size;
+    position: relative;
+    left: -5%;
+    
+    &:last-child {
+        margin-top: 0.5rem;
+    }
+}
+
+@mixin secondary {
+    display: flex;
+    align-self: center;
+}
+
+@mixin input($font-size) {
+    font-weight: bold;
+    padding: 0.5rem;
+    // border-style: solid;
+    // border-width: 1px;
+    // background-color: var(--transparent);
+    font-size: $font-size;
+}
+
+@mixin input-hover {
+    background-color: black;
+    color: white;
+}
+
+@mixin tertiary($width, $height) {
+    display: flex;
+    margin: 0.5rem 0;
+    width: $width;
+    height: $height;
+}
+
+@mixin icon {
+    // align-self: center;
+}
+
+@mixin icon-p--solid {
+    align-self: center;
+    height: 2.5vh;
+    max-width: 5rem;
+    min-width: 5rem;
+}
+
+@mixin icon-p-empty {
+    align-self: center;
+}
+
+@mixin hint-box {
+    min-width: 5vh;
+    width: 96%;
+}
+
+@mixin hint {
+
+}
