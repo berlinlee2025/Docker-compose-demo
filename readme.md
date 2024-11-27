@@ -2,7 +2,7 @@
 <h3>Start testing this Docker composed app</h3>
 
 ```bash
-docker-compose up --build;
+docker compose up --build;
 ```
 
 <br/>
@@ -90,13 +90,13 @@ psql -U postgres -d smart-brain -h 127.0.0.1 -p 5433
 
 ##
 ##
-## Start testing this Docker-compose app
+## Start testing this Docker app
 ```bash
-git clone https://github.com/PhoenixYork166/Docker-compose.git
+git clone https://github.com/PhoenixYork166/AI-React-Node-Postgres-Docker
 ```
 
 ```bash
-cd Docker-compose
+cd AI-React-Node-Postgres-Docker
 ```
 
 # Building this Full Stack app
