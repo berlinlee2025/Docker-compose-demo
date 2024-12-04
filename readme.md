@@ -7,7 +7,7 @@ docker compose up --build;
 
 <br/>
 <ul>
-    <li>1. Docker-compose</li>
+    <li>1. Docker compose</li>
     <img src="./assets/docker-compose.jpg" alt="docker-compose">
     <li>2. React Frontend</li>
     <img src="./assets/react.png" alt="react" />
