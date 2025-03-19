@@ -121,6 +121,7 @@ const FaceRecognition = ({
           
       modal.style.opacity = 1;
      
+      // Hide modal in 2 seconds
       setTimeout(() => modal.style.opacity=0, 2000)
     }
 
@@ -190,6 +191,7 @@ const FaceRecognition = ({
             </button>
           </div>
           {/* Save to Device button */}
+          {/*
           <div className="saveBtn u-margin-top-tiny  u-margin-bottom-small">
             <button 
               className="saveBtn__p"
@@ -201,6 +203,7 @@ const FaceRecognition = ({
               Save to Device
             </button>
           </div>
+          */}
         </div>
       </React.Fragment>
     );
